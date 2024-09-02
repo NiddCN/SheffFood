@@ -93,10 +93,10 @@
         function pop_WebMapTest_DataSource_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['category'] !== null ? autolinker.link(feature.properties['category'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">'<b> Supplier: </b>' + (feature.properties['supplier'] !== null ? autolinker.link(feature.properties['category'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['supplier'] !== null ? autolinker.link(feature.properties['supplier'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['category'] !== null ? autolinker.link(feature.properties['supplier'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['postcode'] !== null ? autolinker.link(feature.properties['postcode'].toLocaleString()) : '') + '</td>\
